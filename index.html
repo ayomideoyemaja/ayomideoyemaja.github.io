@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <title>Ayomide Oyemaja | Statistician, Data Scientist & ML Engineer</title>
   <style>
+    /* Body & Typography */
     body {
       font-family: Arial, sans-serif;
       max-width: 900px;
       margin: auto;
       padding: 40px;
       line-height: 1.6;
-      background-color: #121212; /* dark background */
-      color: #f0f0f0; /* light text */
+      background-color: #121212;  /* dark background */
+      color: #ffffff;             /* light text */
+      scroll-behavior: smooth;    /* smooth scrolling animation */
+      transition: background-color 0.3s, color 0.3s;
     }
 
     h1, h2 {
-      color: #ffffff; /* bright headings */
+      color: #ffffff;
     }
 
     ul {
@@ -24,29 +27,39 @@
     }
 
     a {
-      color: #1e90ff; /* bright blue links */
+      color: #1e90ff;             /* bright link color */
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #00bfff;            /* slightly brighter on hover */
     }
 
+    /* Section spacing */
     .section {
       margin-bottom: 50px;
       padding-top: 60px; /* ensures content isn't hidden under nav */
     }
 
-    .project-title {
+    /* Project & Research Titles */
+    .project-title, .research-title {
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
+    .project-title:hover, .research-title:hover {
+      color: #00bfff;
+    }
+
+    /* Fixed Navigation Menu */
     .nav-menu {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      background: #1c1c1c; /* dark nav menu */
+      background: #1a1a1a;
       border-bottom: 1px solid #333;
       padding: 10px 40px;
       z-index: 1000;
@@ -55,16 +68,28 @@
     .nav-menu a {
       margin-right: 15px;
       font-weight: bold;
-      color: #1e90ff;
     }
 
+    /* Spacer to prevent nav overlap */
     .spacer {
-      height: 60px; /* same height as nav menu */
+      height: 50px; /* same as nav menu height */
     }
 
+    /* Back to Top */
     .back-to-top {
       text-align: right;
       font-size: 0.9em;
+      transition: color 0.3s ease;
+    }
+
+    .back-to-top a:hover {
+      color: #00bfff;
+    }
+
+    /* List item hover animation */
+    li:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
     }
   </style>
 </head>
@@ -77,7 +102,7 @@
     <a href="#connect">Connect</a>
   </div>
 
-  <!-- Spacer to prevent nav overlap -->
+  <!-- Spacer -->
   <div class="spacer"></div>
 
   <!-- Home / Hero -->
@@ -142,7 +167,7 @@
     </ul>
   </div>
 
-  <!-- Connect with Me / Social Links -->
+  <!-- Connect -->
   <div class="section" id="connect">
     <h2>Connect with Me</h2>
     <p>
