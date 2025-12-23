@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayomide Oyemaja | Statistician, Data Scientist & ML Engineer</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Global */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007acc;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #005f99;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 20px 40px 20px;
+    }
+
+    /* Navigation */
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 40px;
+      z-index: 1000;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-menu a {
+      font-weight: 600;
+    }
+    .spacer {
+      height: 60px;
+    }
+
+    /* Headings */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #007acc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* Section backgrounds */
+    .section {
+      padding: 60px 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #research { background: linear-gradient(135deg, #e0f7fa, #b2ebf2); }
+    #projects { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+    #connect { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    /* Social links */
+    .social-links a {
+      margin-right: 20px;
+      font-size: 1.2em;
+      color: #007acc;
+    }
+
+    /* Back to top */
+    .back-to-top {
+      text-align: right;
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+
+    /* Smooth fade-in animation for sections */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-menu">
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#connect">Connect</a>
+  </div>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <!-- Home / Hero -->
+    <div class="section visible">
+      <h1>Ayomide Oyemaja</h1>
+      <p style="text-align:center;">Data Scientist & ML Engineer with a master’s degree in Statistics, focused on machine learning, predictive modeling, and their applications.</p>
+    </div>
+
+    <!-- About Me -->
+    <div class="section visible">
+      <h2>About Me</h2>
+      <p>I am a Data Scientist & ML Engineer with a master’s degree in Statistics. My work focuses on machine learning, predictive modeling, and their applications.</p>
+    </div>
+
+    <!-- Research -->
+    <div class="section" id="research">
+      <h2>Research</h2>
+      <div class="card">
+        <div class="card-title">Machine Learning Methods for Intrusion Detection and Response in Network Security</div>
+        <p>Supervised & Reinforcement learning methods for detecting and responding to network intrusions and attacks. 
+        <a href="https://digitalcommons.georgiasouthern.edu/etd/2941/" target="_blank">[Paper]</a></p>
+      </div>
+      <div class="card">
+        <div class="card-title">Q-Learning Approach Applied to Network Security</div>
+        <p>Q-Learning, a reinforcement learning algorithm, for detecting and responding to network security threats, improving intrusion detection efficiency. 
+        <a href="https://www.mdpi.com/2079-9292/14/10/1996" target="_blank">[Paper]</a></p>
+      </div>
+      <div class="card">
+        <div class="card-title">Gain Ratio for Intrusion Detection Systems in Network Security</div>
+        <p>Gain Ratio, a feature selection method, for improving intrusion detection performance and enhancing network threat classification accuracy. 
+        <a href="https://acisinternational.org/wp-content/uploads/2024/11/2024VirtualProgram.pdf" target="_blank">[Paper]</a></p>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-title">Predicting Life Expectancy Based on Health and Socioeconomic Factors</div>
+        <p>May 2025</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Text Summarization with NLP</div>
+        <p>January 2025</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Predicting Health Outcomes of Smokers Using ML: Regression and classification approach</div>
+        <p>May 2024</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Moving Averages in Time Series Analysis</div>
+        <p>March 2024</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Analyzing Study Habits and Academic Performance</div>
+        <p>December 2023</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Statistical Analysis of Tumor Size and Demographics in Brain Cancer Patients</div>
+        <p>December 2023</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Time Series Modeling of Nigeria’s GDP (1960 - 2018)</div>
+        <p>January 2020</p>
+      </div>
+    </div>
+
+    <!-- Connect -->
+    <div class="section" id="connect">
+      <h2>Connect with Me</h2>
+      <p class="social-links">
+        <a href="https://github.com/ayomideoyemaja" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/ayomide-oyemaja/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:oyemajaayomide@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </p>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+      <a href="#top">Back to Top ↑</a>
+    </div>
+  </div>
+
+  <script>
+    // Scroll Animation: Reveal sections
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
